@@ -1,0 +1,66 @@
+.border-blue {
+    border: 3px solid dodgerblue;
+}
+.small-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.small-image.selected {
+    opacity: 0.7;
+}
+
+.align-items-stretch:hover {
+    filter: brightness(70%);
+    cursor: zoom-in;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 20%;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide:last-child {
+    margin-right: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5%;
+}
+
+.slide.center img {
+    transform: scale(1.5);
+    width: 150%;
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.prev-button,
+.next-button {
+    margin: 0 10px;
+    color: black;
+}
